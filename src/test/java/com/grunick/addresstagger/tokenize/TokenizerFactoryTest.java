@@ -10,6 +10,10 @@ import org.junit.Test;
 import com.grunick.addresstagger.data.Constants.TokenizerConfig;
 import com.grunick.addresstagger.data.Constants.TokenizerTypes;
 import com.grunick.addresstagger.input.InputException;
+import com.grunick.addresstagger.tokenize.NoOpTokenizer;
+import com.grunick.addresstagger.tokenize.TaggedColumnTokenizer;
+import com.grunick.addresstagger.tokenize.Tokenizer;
+import com.grunick.addresstagger.tokenize.TokenizerFactory;
 
 public class TokenizerFactoryTest {
 	
@@ -31,7 +35,7 @@ public class TokenizerFactoryTest {
 		Map<String,String> config = new HashMap<String,String>();
 		config.put(TokenizerConfig.NAME_COLUMN, "temp");
 		config.put(TokenizerConfig.DELIMITER, ",");
-		config.put(TokenizerConfig.HEADER_FILE, "test/data/input.txt");
+		config.put(TokenizerConfig.HEADER_FILE, "src/test/resources/input.txt");
 		config.put(TokenizerConfig.TAG_ORDER, "NUM");
 		Tokenizer tokenizer = TokenizerFactory.makeTokenizer(TokenizerTypes.COLUMN_TOKENIZER, config);
 		assertTrue(tokenizer instanceof TaggedColumnTokenizer);

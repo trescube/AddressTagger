@@ -7,6 +7,9 @@ import java.util.List;
 
 import org.junit.Test;
 
+import com.grunick.addresstagger.data.Address;
+import com.grunick.addresstagger.data.AddressTag;
+
 public class AddressTest {
 	
 	protected Address getAddress() {

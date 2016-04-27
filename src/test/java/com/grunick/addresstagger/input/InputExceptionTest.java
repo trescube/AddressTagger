@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import com.grunick.addresstagger.input.InputException;
+
 public class InputExceptionTest {
 	
 	@Test

@@ -9,6 +9,8 @@ import java.util.Map;
 
 import org.junit.Test;
 
+import com.grunick.addresstagger.strategy.Viterbi;
+
 public class ViterbiTest {
 	
 	protected Map<String, Map<String,Double>> getTransmissionProbabilities() {
