@@ -55,7 +55,7 @@ public class TaggerConfigBuilderTest {
 	
 	@Test
 	public void testLoadConfiguration() throws ConfigurationException {
-		TaggerConfig config = TaggerConfigBuilder.loadConfiguration("test/data/test.properties");
+		TaggerConfig config = TaggerConfigBuilder.loadConfiguration("src/test/resources/test.properties");
 		assertNotNull(config);
 	}
 
