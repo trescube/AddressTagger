@@ -10,14 +10,19 @@ repositories {
 }
 
 dependencies {
-  compile "commons-configuration:commons-configuration:1.10"
-  compile "commons-lang:commons-lang:2.6"
-  compile "commons-logging:commons-logging:1.1.1"
-  compile "commons-io:commons-io:2.4"
-  compile ":jtbl"
-  compile ":lingpipe-4.1.0"
-  compile ":opennlp-maxent-3.0.3"
+    compile "commons-configuration:commons-configuration:1.10"
+    compile "commons-lang:commons-lang:2.6"
+    compile "commons-logging:commons-logging:1.1.1"
+    compile "commons-io:commons-io:2.4"
+    compile ":jtbl"
+    compile ":lingpipe-4.1.0"
+    compile ":opennlp-maxent-3.0.3"
 
 	testCompile 'junit:junit:4.12'
 }
 
+jar {
+	from { 
+		configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } 
+	}
+}
