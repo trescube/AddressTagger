@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import com.grunick.addresstagger.stat.Counter;
+
 public class CounterTest {
 	
 	@Test

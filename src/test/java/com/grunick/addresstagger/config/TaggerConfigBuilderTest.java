@@ -9,6 +9,8 @@ import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.junit.Test;
 
+import com.grunick.addresstagger.config.TaggerConfig;
+import com.grunick.addresstagger.config.TaggerConfigBuilder;
 import com.grunick.addresstagger.data.Constants.InputSourceTypes;
 import com.grunick.addresstagger.strategy.NoOpTaggerStrategy;
 

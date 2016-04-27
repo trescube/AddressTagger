@@ -8,6 +8,11 @@ import java.util.Map;
 import org.junit.Test;
 
 import com.grunick.addresstagger.data.Constants.FileConfig;
+import com.grunick.addresstagger.input.FileInputSource;
+import com.grunick.addresstagger.input.InputException;
+import com.grunick.addresstagger.input.InputSource;
+import com.grunick.addresstagger.input.InputSourceFactory;
+import com.grunick.addresstagger.input.NoOpInputSource;
 
 public class InputSourceFactoryTest {
 	
